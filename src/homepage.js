@@ -7,7 +7,7 @@ function loadHomePage() {
     // const backgroundImg = document.createElement("img");
     const backgroundImg = new Image();
 
-    headLine.innerText = "Find Your Bliss in Every Bite and Brew";
+    headLine.innerText = "Cupcake Cove";
     desc.innerText = `There's something magical about our café. 
     It's in the way the morning light filters through the windows, 
     the laughter of friends sharing stories, and the comforting taste of a well-made cappuccino. 
