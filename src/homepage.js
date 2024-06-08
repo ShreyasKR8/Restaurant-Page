@@ -1,4 +1,4 @@
-import bgImg from './bgImage.jpg' 
+import bgImg from './bgImage.jpg'; 
 
 function loadHomePage() {
     const content = document.querySelector("#content");
@@ -14,6 +14,7 @@ function loadHomePage() {
     It's in the care we put into every detail, from the friendly smile of our staff to the 
     artful presentation of our pastries.`;
     backgroundImg.src = bgImg;
+    backgroundImg.width = 1440;
 
     content.appendChild(headLine);
     content.appendChild(desc);
