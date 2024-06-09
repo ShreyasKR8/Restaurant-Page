@@ -76,7 +76,6 @@ const menuData = {
     ]
 };
 
-let index = 0;
 let divCount = 0;
 function createMenuCategory(menuCategoryName, menuCategory) {
     const categoryDiv = document.createElement("div");
@@ -109,7 +108,6 @@ function createMenuCategory(menuCategoryName, menuCategory) {
 }
 
 function loadMenuPage() {
-    index = 0;
     divCount = 0;
     const headingDiv = document.createElement("h1");
     headingDiv.innerText = "Menu";
@@ -117,7 +115,7 @@ function loadMenuPage() {
 
     Object.keys(menuData).forEach(menuCategoryName => {
         createMenuCategory(menuCategoryName, menuData[menuCategoryName]);
-    })
+    });
 }
 
 export default loadMenuPage;
