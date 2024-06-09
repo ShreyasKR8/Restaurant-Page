@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("images/bgImage.jpg");
+    /* min-height: 100vh; */
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; 
+}
+
+header {
+    width: 200px;
+    margin: 20px auto;
+    /* border: 1px solid red; */
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.home {
+    /* border: 1px solid red; */
+    margin: 100px auto;
+    background-color: azure;
+    width: 800px;
+}

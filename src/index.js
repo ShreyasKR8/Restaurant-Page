@@ -1,8 +1,11 @@
 import loadHomePage from "./homepage"
 import loadMenuPage from "./menu-page";
 import loadAboutPage from "./contact-page";
+import './style.css'
 
 const content = document.querySelector("#content");
+content.classList.add("home");
+
 const homeBtn = document.querySelector(".home-btn");
 const menuBtn = document.querySelector(".menu-btn");
 const aboutBtn = document.querySelector(".about-btn");
