@@ -2,17 +2,16 @@ import bgImg from './bgImage.jpg';
 
 function loadHomePage() {
     const content = document.querySelector("#content");
-    const headLine = document.createElement("h3");
+    const headLine = document.createElement("h1");
     const desc = document.createElement("p");
     // const backgroundImg = document.createElement("img");
     const backgroundImg = new Image();
 
     headLine.innerText = "Cupcake Cove";
-    desc.innerText = `There's something magical about our café. 
-    It's in the way the morning light filters through the windows, 
-    the laughter of friends sharing stories, and the comforting taste of a well-made cappuccino. 
-    It's in the care we put into every detail, from the friendly smile of our staff to the 
-    artful presentation of our pastries.`;
+    desc.innerText = `At Cupcake Cove, every bite is a moment of pure joy. 
+    We handcraft each cupcake with love and the finest locally sourced 
+    ingredients. From classic chocolate and vanilla to seasonal fruit 
+    creations, there's a cupcake for every taste.`;
     backgroundImg.src = bgImg;
     backgroundImg.width = 1440;
 
