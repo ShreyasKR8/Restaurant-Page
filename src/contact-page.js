@@ -13,9 +13,9 @@ const contactInfo = [
     }
 ];
 
-function createContactCard(contactPerson, divIndex) {
+function createContactCard(contactPerson) {
     const contactCard = document.createElement("div");
-    contactCard.className = `contact-card-${divIndex}`;
+    contactCard.className = "contact-card";
     content.appendChild(contactCard);
 
     const name = document.createElement("h3");
@@ -32,12 +32,11 @@ function createContactCard(contactPerson, divIndex) {
 
 function loadAboutPage() {
     const heading = document.createElement("h1");
+    heading.classList.add("contact-heading")
     heading.innerText = "Contact Us";
     content.appendChild(heading);
-    let divIndex = 1;
     contactInfo.forEach(contactPerson => {
-        createContactCard(contactPerson, divIndex);
-        divIndex++;
+        createContactCard(contactPerson);
     });
 }
 
