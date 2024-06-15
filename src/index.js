@@ -4,7 +4,7 @@ import loadAboutPage from "./contact-page";
 import './style.css'
 
 const content = document.querySelector("#content");
-content.classList.add("home");
+content.classList.add("content");
 
 const homeBtn = document.querySelector(".home-btn");
 const menuBtn = document.querySelector(".menu-btn");

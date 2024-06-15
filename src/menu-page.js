@@ -5,17 +5,17 @@ const menuData = {
         {
             name: "Salted Caramel Dream",
             description: "Caramel cupcake topped with salted caramel buttercream and a caramel drizzle.",
-            price: 3
+            price: 3.99
         },
         {
             name: "Peanut Butter Paradise",
             description: "Peanut butter cupcake with a creamy peanut butter frosting and a chocolate drizzle.",
-            price: 4
+            price: 4.79
         },
         {
             name: "Cookies and Cream",
             description: "Oreo-infused cupcake with a cookies and cream frosting, topped with a mini Oreo.",
-            price: 3
+            price: 3.99
         }
     ],
     "Classic Cupcakes": [
@@ -88,6 +88,7 @@ function createMenuCategory(menuCategoryName, menuCategory) {
 
     menuCategory.forEach(item => {
         const itemDiv = document.createElement("div");
+        itemDiv.className = "menu-item";
         categoryDiv.appendChild(itemDiv);
 
         const itemHeading = document.createElement("h3");
@@ -97,6 +98,7 @@ function createMenuCategory(menuCategoryName, menuCategory) {
         itemDesc.innerText = item.description;
 
         const itemPrice = document.createElement("p");
+        itemPrice.className = "price";
         itemPrice.innerText = `$${item.price}`;
 
         //imageDiv
@@ -110,6 +112,7 @@ function createMenuCategory(menuCategoryName, menuCategory) {
 function loadMenuPage() {
     divCount = 0;
     const headingDiv = document.createElement("h1");
+    headingDiv.classList.add("menu-header")
     headingDiv.innerText = "Menu";
     content.appendChild(headingDiv);
 

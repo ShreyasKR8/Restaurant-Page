@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Honya';
+    src: url('fonts/Honya-Regular.ttf') format('truetype');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,15 +11,15 @@
 
 body {
     background-image: url("images/bgImage.jpg");
-    /* min-height: 100vh; */
     background-position: center;
     background-size: cover;
     background-attachment: fixed; 
+    font-family: 'Honya', sans-serif;
 }
 
 header {
-    width: 200px;
-    margin: 20px auto;
+    width: 400px;
+    margin: 40px auto;
     /* border: 1px solid red; */
 }
 
@@ -23,9 +28,90 @@ nav {
     justify-content: space-around;
 }
 
-.home {
-    /* border: 1px solid red; */
-    margin: 100px auto;
-    background-color: azure;
+nav button {
+    font-family: 'Honya', sans-serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+}
+
+nav button:hover {
+    background-color: rgb(150, 150, 150);
+    cursor: pointer;
+}
+
+.content {
+    margin: 80px auto;
+    background-color: rgb(255, 255, 255);
     width: 800px;
+    border-radius: 7px;
+    padding: 40px;
+}
+
+.content h1 {
+    margin-bottom: 30px;
+    font-size: 3.5rem;
+}
+
+.content h2 {
+    margin-bottom: 30px;
+    width: fit-content;
+    margin: 0 auto 30px;
+    font-size: 2.5rem;
+    text-decoration:dotted;
+}
+
+.content h3 {
+    font-size: 1.5rem;
+}
+
+.menu-header, .contact-heading {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.content p {
+    font-size: 1.12rem;
+    font-family:'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+
+.content .desc {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: normal;
+    font-family:'Honya', sans-serif;
+}
+
+.menu-item {
+    margin: 0 auto 20px;
+    width: 500px;
+    border-bottom: 2px dotted black;
+}
+
+.menu-item p {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.menu-item .price {
+    font-weight: bold;
+}
+
+.contact-card {
+    margin: 0 auto 30px;
+    width: 500px;
+}
+
+footer {
+    font-family: sans-serif;
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    border-top: 1px solid #e7e7e7;
 }
