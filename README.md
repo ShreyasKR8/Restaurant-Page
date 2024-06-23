@@ -1,6 +1,7 @@
 # Restaurant-Page
 
-This project creates a dynamic restaurant homepage using JavaScript and webpack.
+This project is part of "The Odin Project" course and creates a dynamic restaurant homepage using JavaScript and webpack.
+It was mainly focused on learning webpack and JavaScript module bundling. Styling and other design details are minimal and are not the primary focus of this project.
 
 ## Installation
 
@@ -21,7 +22,3 @@ Open `dist/index.html` in your browser to view the site.
 - `home.js`: Loads the homepage content.
 - `menu.js`: Loads the menu content.
 - `contact.js`: Loads the contact content.
-
-## Note
-
-This project focuses on learning webpack and JavaScript module bundling. Styling and other design details are minimal and are not the primary focus of this project.
